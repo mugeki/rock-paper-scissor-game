@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<meta charst="utf-8" />
+	<title>Simple Rock Paper Scissor</title>
+	<meta name="author" content="Muhamad Elang Ramadhan" />
+	<meta name="description" content="A simple rock, paper, scissor game." />
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Press Start 2P" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="gameContainer">
+		<div class="choiceBox">
+			<div class="choices">
+				<p class="title-text">You:</p>
+				<p id="player"></p>
+			</div>
+			<div class="choices">
+				<p class="title-text">Computer:</p>
+				<p id="comp"></p>
+			</div>
+		</div>
+		<div class="statsBox">
+			<p class="title-text" id="tie">TIE</p>
+			<p class="title-text" id="allScore" style="font-size: 80px">0:0</p>
+			<p id="winner"></p>
+			<p id="winScore"></p>
+		</div>
+		<p class="title-text" style="margin-bottom: -27px">Choose your weapon</p>
+		<div class="playerBox">
+			<button class="selection" id="playerRock" onclick="mainGame(this)">Rock</button>
+			<button class="selection" id="playerPaper" onclick="mainGame(this)">Paper</button>
+			<button class="selection" id="playerScissor" onclick="mainGame(this)">Scissor</button>
+		</div>
+
+		<div class="startBox">
+			<button id="startBtn" onclick="restartGame()">Restart Game!</button>
+		</div>
+	</div>
+
+	<script src="game.js"></script>
+</body>
